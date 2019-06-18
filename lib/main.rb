@@ -3,6 +3,8 @@ require 'date'
 require_relative 'slot'
 require_relative 'agenda'
 
+SLOT_DURATION = 60
+
 sandra_busy_slots = [
   {
     start: DateTime.new(2019, 6, 20, 9, 30),
@@ -40,4 +42,4 @@ andrew_busy_slots = [
 agenda1 = Agenda.new(sandra_busy_slots)
 agenda2 = Agenda.new(andrew_busy_slots)
 
-p Agenda.available_slots(agenda1, agenda2, 60)
+p Agenda.available_slots(agenda1, agenda2, SLOT_DURATION)

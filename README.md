@@ -27,6 +27,9 @@ To Run the script:
     end: DateTime.new(2019, 6, 20, 9, 40)
   }
   ```
+
+  Change the value of ```SLOT_DURATION``` to the desired value
+
 3. Run in command line
 ```shell
 ruby lib/main.rb

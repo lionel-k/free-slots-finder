@@ -1,6 +1,6 @@
 ## Free Slots Finder
 
-This app can help you find the available slots from 2 agendas containing busy slots with this format.
+This app can help you find the available slots from 2 agendas containing busy slots with this format:
 
 ```
 [
@@ -16,10 +16,10 @@ This app can help you find the available slots from 2 agendas containing busy sl
 ]
 ```
 
-To Run the script:
+> To Run the script:
 
 1. Open `lib/main.rb`
-2. Add the busy slots on this format in Sandra and Andrews busy slots arrays.
+2. Add the busy slots on this format in `Sandra` and `Andrews` busy slots arrays with this format:
 
   ```ruby
   {
@@ -28,14 +28,14 @@ To Run the script:
   }
   ```
 
-  Change the value of ```SLOT_DURATION``` to the desired value
+  Change the value of ```SLOT_DURATION``` and assign to the desired value
 
 3. Run in command line
 ```shell
 ruby lib/main.rb
 ```
 
-To run the spec:
+> To run the spec:
 
 ```shell
   rspec
